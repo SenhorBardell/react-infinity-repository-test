@@ -15,10 +15,6 @@ const textLines = text =>
 // 78 text.length = 600 px length
 // 1 px length = 7.7
 
-const visible = bounding => 
-  bounding.top >= 0 &&
-  bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-
 const user = () => {
   const i = Math.floor(Math.random() * 4)
   switch (i) {
