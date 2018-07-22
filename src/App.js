@@ -12,7 +12,7 @@ const lineWidth = 600
 const textLines = text => 
   Math.ceil(textLength(text.length) / lineWidth) * textRow
 
-// 78 text.lengt = 600 px length
+// 78 text.length = 600 px length
 // 1 px length = 7.7
 
 const visible = bounding => 
@@ -39,43 +39,6 @@ const requestMessages = _ => new Promise(r =>
       text: chance.sentence({ words: Math.floor(Math.random() * 35) + 1 })
     }))
   ))
-
-// class ChatList extends Component {
-//   constructor(props) {
-//     super(props)
-//     this.state = {
-//       height: 0, 
-//       visibleMessages: [],
-//       messages: [],
-//       estimatedHeight: 60
-//     }
-
-//     this.requestMessages().then(messages => {
-//       const estimatedMessagesCount = Math.ceil(this.state.height / this.state.estimatedHeight)
-//       const visibleMessages = messages.slice(0, estimatedMessagesCount)
-//       console.log(visibleMessages, estimatedMessagesCount)
-//       this.setState({messages, visibleMessages})
-//     })
-//   }
-//   messageForRow(i) {
-
-//   }
-//   componentDidMount() {
-//     window.addEventListener('scroll', () => this.scrolled())
-//     const height = window.innerHeight || document.documentElement.clientHeight
-//     this.setState({
-//       height,
-//     })
-//   }
-//   scrolled() {
-//     // remove previos messages
-//     // add new messages
-//     console.log(this.state)
-//   }
-//   render() {
-//     return <div></div>
-//   }
-// }
 
 class App extends Component {
   constructor(props) {
