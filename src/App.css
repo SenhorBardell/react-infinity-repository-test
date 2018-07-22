@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.message {
+  background: lightblue;
+  margin-top: 10px;
+}
+
+.followup {
+  margin-top: 0;
+}
